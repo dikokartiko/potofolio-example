@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+h1 {
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+h2 {
+  text-align: center;
+}
+span {
+  color: #557bce;
+}
+p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+i {
+  font-size: 130px;
+}
+button {
+  margin-top: 25px;
+  color: #ffffff;
+  background-color: #557bce;
+  font-size: 19px;
+  border: 1px solid #2d63c8;
+  border-radius: 33px;
+  padding: 15px 50px;
+  cursor: pointer;
+}
+button:hover {
+  color: #2d63c8;
+  background-color: rgb(0, 0, 0);
+}
+/* top container */
+#section1,
+#section2 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#section1 {
+  background-image: url(../images/background.png);
+}
+#section2 {
+  background-color: white;
+  text-align: center;
+}
+
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2.1fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbrand Navbar Navbar"
+    "Jumbotron Jumbotron Jumbotron"
+    "SKILLS SKILLS SKILLS";
+}
+
+.navbrand {
+  grid-area: navbrand;
+}
+
+.Navbar {
+  margin: 20px 68px 0px 0px;
+  grid-area: Navbar;
+}
+
+.Jumbotron {
+  background-color: rgba(109, 109, 218, 0.5);
+  margin: 75px auto 0px;
+  height: 100%;
+  width: 75%;
+  border-radius: 85px 5px;
+  border: 1px solid #dfdfdf;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "picture Description"
+    "picture Description";
+  grid-area: Jumbotron;
+}
+
+.Description {
+  grid-area: Description;
+}
+
+.picture {
+  background-color: #557bce;
+  margin-top: 97px;
+  margin-left: 124px;
+  grid-area: picture;
+  height: 400px;
+  padding: 1px;
+  border-radius: 100% / 100%;
+  border: 28px solid #ffffff;
+}
+
+.SKILLS {
+  margin-top: 92px;
+  grid-area: SKILLS;
+  height: 200px;
+  width: auto;
+}
+
+.resume {
+  margin-left: 20px;
+}
+
+.menu {
+  gap: 25px;
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: 38%;
+}
+
+.textmenu {
+  color: black;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* second container */
+.second-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Tittle Tittle Tittle"
+    "card1 card2 card3";
+}
+
+.Tittle {
+  grid-area: Tittle;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+.card-deck {
+  transform: translatex(100%);
+  gap: 20px;
+}
+
+.service-row {
+  margin-top: 60px;
+}
